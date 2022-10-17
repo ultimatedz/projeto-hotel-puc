@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Idis - Pagamento</title>
+    <link rel="stylesheet" href="css/pagamento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+    <div class="header">
+        <a href="index.html"><img alt="Hotel Idis" src="img/logo1.jpg" id="logo"></a>
+        <div class="header-right">
+            <a class="#idis" href="index.html">O Idis</a>
+            <a class="active" href="reserva.html">Reservar</a>
+            <a href="#about">Sobre</a>
+            <a href="#rede">Hoteis e Resorts</a>
+            <a href="#eventos">Eventos</a>
+            <a href="#Check-in">Check-in</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="/action_page.php">
+              <div class="row">
+                <div class="col-50">
+                  <h3>Endereço de cobrança</h3>
+                  <label for="fname"><i class="fa fa-user"></i> Nome completo</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Ricardo M. Moraes">
+                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                  <input type="text" id="email" name="email" placeholder="ricardo@exemplo.com">
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Endereço</label>
+                  <input type="text" id="adr" name="address" placeholder="Rua Erasto Gaertner,202 - Bacacheri">
+                  <label for="city"><i class="fa fa-institution"></i> Cidade</label>
+                  <input type="text" id="city" name="city" placeholder="Curitiba">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">Estado</label>
+                      <input type="text" id="state" name="state" placeholder="PR">
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">CEP</label>
+                      <input type="text" id="cep" name="cep" placeholder="00000-000" required pattern="\d{5}-\d{3}"/>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50">
+                  <h3>Pagamento</h3>
+                  <label for="fname">Cartões aceitos</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-paypal" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-amex" style="color:orange;"></i>
+                  </div>
+                  <label for="cname">Nome no cartão</label>
+                  <input type="text" id="cname" name="cardname" placeholder="Ricardo M. Moraes">
+                  <label for="ccnum">Numero do cartão credito</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expmonth">Mes de validade</label>
+                      <input type="text" id="expmonth" name="expmonth" placeholder="Outubro">
+                    </div>
+                    <div class="col-50">
+                      <label for="expyear">Ano de validade</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="2024">
+                    </div>
+                  </div>
+
+
+                  <label for="expmonth">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="258">
+      
+                  
+                </div>
+      
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Concordo com os termos de uso
+              </label>
+              <a href="checkout.html">
+                <button type="button" class="btn">Pagar</button>
+              </a>
+            </form>
+          </div>
+        </div>
+      
+        
+      </div>
+
+
+
+
+
+
+      <div class="footer">
+        <h3>Hotel idis</h3>
+        <h3>Telefone: 41 9 XXXX-XXXX</h3>
+        <h3>Endereço: Rua X - Curitiba - Paraná</h3>
+        <h3>Direitos reservados</h3>
+        
+    </div>
+
+
+
+
+
+    
+</body>
+</html>
